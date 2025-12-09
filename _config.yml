@@ -1,0 +1,8 @@
+title: my.claude
+description: 私のClaudeとの付き合い方をまとめたリファレンス集
+baseurl: /my.claude
+url: https://eguikuma.github.io
+markdown: kramdown
+
+include:
+  - manifest.webmanifest
