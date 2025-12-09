@@ -1,0 +1,306 @@
+/**
+ * ルート
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+ * コンテンツ
+ */
+body {
+  background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/**
+ * 見出しタグのリンク
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  cursor: pointer;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1 a::after,
+h2 a::after,
+h3 a::after,
+h4 a::after,
+h5 a::after,
+h6 a::after {
+  content: ' #';
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+h1 a:hover::after,
+h2 a:hover::after,
+h3 a:hover::after,
+h4 a:hover::after,
+h5 a:hover::after,
+h6 a:hover::after {
+  opacity: 1;
+}
+
+/**
+ * 足跡デコレーション
+ */
+.footprints {
+  position: fixed;
+  font-size: 30px;
+  opacity: 0.1;
+  animation: spin 20s linear infinite;
+  pointer-events: none;
+}
+
+.footprints:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.footprints:nth-child(2) {
+  top: 20%;
+  right: 15%;
+  animation-delay: -5s;
+}
+
+.footprints:nth-child(3) {
+  bottom: 15%;
+  left: 20%;
+  animation-delay: -10s;
+}
+
+.footprints:nth-child(4) {
+  bottom: 25%;
+  right: 10%;
+  animation-delay: -15s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**
+ * バナー
+ */
+.banner {
+  padding-bottom: 1rem;
+  height: 38px;
+}
+
+.banner-brand {
+  color: inherit;
+  gap: 0.5rem;
+}
+
+.banner-brand:hover {
+  text-decoration: none;
+}
+
+.banner-symbol {
+  width: 24px;
+  height: 24px;
+}
+
+.banner-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #24292f;
+}
+
+/**
+ * 戻るリンク
+ */
+.previous {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  color: #57606a;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.previous:hover {
+  background-color: #f6f8fa;
+  border-color: #1b1f2326;
+}
+
+.previous:active {
+  background-color: #ebecf0;
+}
+
+/**
+ * テーブル
+ */
+table {
+  border-collapse: collapse;
+  border: none;
+  background: #ffffff;
+  width: 100% !important;
+  max-width: 100%;
+  table-layout: fixed;
+  border-radius: 12px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/**
+ * テーブル見出し
+ *
+ * デフォルトは非表示です
+ */
+table thead {
+  display: none;
+}
+
+/**
+ * テーブル見出し
+ *
+ * labeledクラスの有無で制御します
+ */
+table.labeled thead {
+  display: table-header-group;
+}
+
+table.labeled thead tr {
+  background: #f9fafb;
+  border-bottom: 2px solid #d97757;
+}
+
+table.labeled thead th {
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  text-align: left;
+}
+
+table.labeled thead th:last-child {
+  text-align: right;
+}
+
+/**
+ * テーブル内容
+ */
+.inner table tbody,
+table tbody {
+  display: table-row-group !important;
+  width: 100% !important;
+}
+
+/**
+ * テーブル行
+ */
+.inner table tbody tr,
+table tbody tr {
+  display: table-row !important;
+  width: 100% !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+  transition: background-color 0.15s ease;
+}
+
+.inner table tbody tr:last-child,
+table tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+.inner table tbody tr:hover,
+table tbody tr:hover {
+  background: #fef7f4 !important;
+}
+
+/**
+ * テーブルセル
+ */
+table tbody td {
+  padding: 0.875rem 1rem;
+  vertical-align: middle;
+}
+
+table tbody td:first-child {
+  font-weight: 500;
+  color: #374151;
+}
+
+table tbody td:last-child {
+  color: #6b7280;
+  text-align: right;
+}
+
+table tbody td:only-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/**
+ * 注釈
+ */
+.postscript {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d0d7de;
+  text-align: center;
+  color: #57606a;
+}
+
+.postscript a {
+  color: #0969da;
+}
+
+/**
+ * レスポンシブ対応
+ */
+@media (max-width: 544px) {
+  .banner {
+    height: 34px;
+  }
+
+  .banner-symbol {
+    width: 20px;
+    height: 20px;
+  }
+
+  .banner-title {
+    font-size: 1rem;
+  }
+
+  .previous {
+    width: 32px;
+    height: 32px;
+  }
+}

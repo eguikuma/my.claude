@@ -1,0 +1,14 @@
+{
+  "name": "my.claude",
+  "short_name": "my.claude",
+  "description": "私のClaudeとの付き合い方をまとめたリファレンス集",
+  "start_url": "/my.claude/",
+  "scope": "/my.claude/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#D97757",
+  "icons": [
+    { "src": "/my.claude/192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/my.claude/512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

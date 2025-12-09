@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+
+  <!-- 背景：rx=角丸 -->
+  <rect 
+    width="32" 
+    height="32" 
+    rx="6" 
+    fill="#D97757"
+  />
+
+  <!-- ドット：cx=横位置, cy=縦位置, r=大きさ -->
+  <circle 
+    cx="8" 
+    cy="23" 
+    r="2.5" 
+    fill="white"
+  />
+
+  <!-- C文字：M26 10=開始位置(横 縦), stroke-width=太さ -->
+  <path 
+    d="M25 12
+       c-1.2 -2.4 -3.6 -4 -6.5 -4
+       -4.5 0 -8 3.5 -8 8
+       s3.5 8 8 8
+       c2.9 0 5.3 -1.6 6.5 -4"
+    stroke="white" 
+    stroke-width="3" 
+    stroke-linecap="round" 
+    fill="none"
+  />
+
+</svg>
