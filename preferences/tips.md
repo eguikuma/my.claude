@@ -71,13 +71,23 @@ Claudeがこれらのファイルも読み込んでくれます
 
 ### [CLAUDE.mdが複数あるとどうなる？](#multiple-claude-md) {#multiple-claude-md}
 
-Claudeは以下の順序で読み込みます
+すべて読み込まれ、統合されて適用されます
 
-1. `~/.claude/CLAUDE.md`（ユーザー設定）
-2. プロジェクトルートの `CLAUDE.md`
-3. サブディレクトリの `CLAUDE.md`（作業中のディレクトリ）
+{: .labeled}
 
-すべてが統合されて適用されます
+| 読み込み順 | 種類                 | 場所                   |
+| ---------- | -------------------- | ---------------------- |
+| 1          | Enterprise Policy    | OS固有のパス           |
+| 2          | Project Memory       | `./CLAUDE.md`          |
+| 3          | Project Rules        | `./.claude/rules/*.md` |
+| 4          | User Memory          | `~/.claude/CLAUDE.md`  |
+| 5          | Project Memory Local | `./CLAUDE.local.md`    |
+
+後から読み込まれるものほど優先度が高くなります
+
+ただし、公式ドキュメントでは「矛盾する指示は避けるべき」と明記されています
+
+作業ディレクトリから親へ再帰的に探索し、サブディレクトリは遅延読み込みされます
 
 > 参考：[Memory](https://code.claude.com/docs/en/memory)
 
