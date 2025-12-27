@@ -24,6 +24,17 @@ h4,
 h5,
 h6 {
   cursor: pointer;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0 !important;
 }
 
 h1 a,
@@ -250,6 +261,7 @@ table tbody tr:hover {
 table tbody td {
   padding: 0.875rem 1rem;
   vertical-align: middle;
+  border-right: 1px solid #e5e7eb;
 }
 
 table tbody td:first-child {
@@ -260,6 +272,7 @@ table tbody td:first-child {
 table tbody td:last-child {
   color: #6b7280;
   text-align: right;
+  border-right: none;
 }
 
 table tbody td:only-child {
