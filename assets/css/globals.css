@@ -59,7 +59,8 @@ li::marker {
  */
 code {
   padding: 0.2em 0.4em !important;
-  background: #f6f8fa !important;
+  background: #e8eaed !important;
+  border: 1px solid #d0d7de !important;
   border-radius: 4px !important;
   font-size: 0.9em !important;
   color: #24292f !important;
@@ -68,14 +69,17 @@ code {
 pre {
   margin: 1rem 0 !important;
   padding: 1rem !important;
-  background: #f6f8fa !important;
+  background: #1f2328 !important;
   border-radius: 8px !important;
   overflow-x: auto !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 pre code {
   padding: 0 !important;
   background: transparent !important;
+  color: #e6edf3 !important;
+  border: none !important;
 }
 
 /**
