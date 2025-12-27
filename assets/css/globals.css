@@ -2,38 +2,38 @@
  * ルート
  */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 /**
  * コンテンツ
  */
 body {
-  background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
-  min-height: 100vh;
-  overflow-x: hidden;
+  background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%) !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
 }
 
 /**
-* 区切り
-*/
+ * 区切り
+ */
 hr {
-  margin: 1.2em 0px;
+  margin: 1.2em 0px !important;
 }
 
 /**
  * 引用
  */
 blockquote {
-  margin: 1rem 0;
-  padding: 0.75rem 1rem;
-  border-left: 4px solid #d97757;
-  background: #fef7f4;
-  color: #57606a;
+  margin: 1rem 0 !important;
+  padding: 0.75rem 1rem !important;
+  border-left: 4px solid #d97757 !important;
+  background: #fef7f4 !important;
+  color: #57606a !important;
 }
 
 blockquote p {
-  margin: 0;
+  margin: 0 !important;
 }
 
 /**
@@ -41,69 +41,69 @@ blockquote p {
  */
 ul,
 ol {
-  margin: 1rem 0;
-  padding-left: 1.5rem;
+  margin: 1rem 0 !important;
+  padding-left: 1.5rem !important;
 }
 
 li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.6 !important;
 }
 
 li::marker {
-  color: #d97757;
+  color: #d97757 !important;
 }
 
 /**
  * コード
  */
 code {
-  padding: 0.2em 0.4em;
-  background: #f6f8fa;
-  border-radius: 4px;
-  font-size: 0.9em;
-  color: #24292f;
+  padding: 0.2em 0.4em !important;
+  background: #f6f8fa !important;
+  border-radius: 4px !important;
+  font-size: 0.9em !important;
+  color: #24292f !important;
 }
 
 pre {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: #f6f8fa;
-  border-radius: 8px;
-  overflow-x: auto;
+  margin: 1rem 0 !important;
+  padding: 1rem !important;
+  background: #f6f8fa !important;
+  border-radius: 8px !important;
+  overflow-x: auto !important;
 }
 
 pre code {
-  padding: 0;
-  background: transparent;
+  padding: 0 !important;
+  background: transparent !important;
 }
 
 /**
  * 段落
  */
 p {
-  margin: 0.75rem 0;
-  line-height: 1.7;
+  margin: 0.75rem 0 !important;
+  line-height: 1.7 !important;
 }
 
 /**
  * 強調（サブセクション見出し）
  */
 strong {
-  display: block;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #24292f;
+  display: block !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #24292f !important;
 }
 
 strong::before {
-  content: '●';
-  color: #d97757;
-  margin-right: 0.5rem;
-  font-size: 0.6em;
-  vertical-align: middle;
+  content: '●' !important;
+  color: #d97757 !important;
+  margin-right: 0.5rem !important;
+  font-size: 0.6em !important;
+  vertical-align: middle !important;
 }
 
 /**
@@ -115,7 +115,7 @@ h3,
 h4,
 h5,
 h6 {
-  cursor: pointer;
+  cursor: pointer !important;
   margin-top: 1.2em !important;
   margin-bottom: 0.5em !important;
 }
@@ -135,9 +135,9 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer !important;
 }
 
 h1 a::after,
@@ -146,9 +146,9 @@ h3 a::after,
 h4 a::after,
 h5 a::after,
 h6 a::after {
-  content: ' #';
-  opacity: 0;
-  transition: opacity 0.2s;
+  content: ' #' !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s !important;
 }
 
 h1 a:hover::after,
@@ -157,42 +157,42 @@ h3 a:hover::after,
 h4 a:hover::after,
 h5 a:hover::after,
 h6 a:hover::after {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 /**
  * 足跡デコレーション
  */
 .footprints {
-  position: fixed;
-  font-size: 30px;
-  opacity: 0.1;
-  animation: spin 20s linear infinite;
-  pointer-events: none;
+  position: fixed !important;
+  font-size: 30px !important;
+  opacity: 0.1 !important;
+  animation: spin 20s linear infinite !important;
+  pointer-events: none !important;
 }
 
 .footprints:nth-child(1) {
-  top: 10%;
-  left: 10%;
-  animation-delay: 0s;
+  top: 10% !important;
+  left: 10% !important;
+  animation-delay: 0s !important;
 }
 
 .footprints:nth-child(2) {
-  top: 20%;
-  right: 15%;
-  animation-delay: -5s;
+  top: 20% !important;
+  right: 15% !important;
+  animation-delay: -5s !important;
 }
 
 .footprints:nth-child(3) {
-  bottom: 15%;
-  left: 20%;
-  animation-delay: -10s;
+  bottom: 15% !important;
+  left: 20% !important;
+  animation-delay: -10s !important;
 }
 
 .footprints:nth-child(4) {
-  bottom: 25%;
-  right: 10%;
-  animation-delay: -15s;
+  bottom: 25% !important;
+  right: 10% !important;
+  animation-delay: -15s !important;
 }
 
 @keyframes spin {
@@ -209,75 +209,71 @@ h6 a:hover::after {
  * バナー
  */
 .banner {
-  padding-bottom: 1rem;
-  height: 38px;
+  padding-bottom: 1rem !important;
+  height: 38px !important;
 }
 
 .banner-brand {
-  color: inherit;
-  gap: 0.5rem;
+  color: inherit !important;
+  gap: 0.5rem !important;
 }
 
 .banner-brand:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .banner-symbol {
-  width: 24px;
-  height: 24px;
+  width: 24px !important;
+  height: 24px !important;
 }
 
 .banner-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #24292f;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: #24292f !important;
 }
 
 /**
  * 戻るリンク
  */
 .previous {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  background: transparent;
-  border: 1px solid #d0d7de;
-  border-radius: 6px;
-  color: #57606a;
-  cursor: pointer;
-  transition:
-    background-color 0.2s,
-    border-color 0.2s;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 1px solid #d0d7de !important;
+  border-radius: 6px !important;
+  color: #57606a !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s, border-color 0.2s !important;
 }
 
 .previous:hover {
-  background-color: #f6f8fa;
-  border-color: #1b1f2326;
+  background-color: #f6f8fa !important;
+  border-color: #1b1f2326 !important;
 }
 
 .previous:active {
-  background-color: #ebecf0;
+  background-color: #ebecf0 !important;
 }
 
 /**
  * テーブル
  */
 table {
-  border-collapse: collapse;
-  border: none;
-  background: #ffffff;
+  border-collapse: collapse !important;
+  border: none !important;
+  background: #ffffff !important;
   width: 100% !important;
-  max-width: 100%;
-  table-layout: fixed;
-  border-radius: 12px;
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.1),
-    0 1px 2px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  margin: 1.2em 0px;
+  max-width: 100% !important;
+  table-layout: fixed !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06) !important;
+  overflow: hidden !important;
+  margin: 1.2em 0px !important;
 }
 
 /**
@@ -286,7 +282,7 @@ table {
  * デフォルトは非表示です
  */
 table thead {
-  display: none;
+  display: none !important;
 }
 
 /**
@@ -295,27 +291,28 @@ table thead {
  * labeledクラスの有無で制御します
  */
 table.labeled thead {
-  display: table-header-group;
+  display: table-header-group !important;
 }
 
 table.labeled thead tr {
-  background: #f9fafb;
-  border-bottom: 2px solid #d97757;
+  background: #f9fafb !important;
+  border-bottom: 2px solid #d97757 !important;
 }
 
 table.labeled thead th {
-  padding: 0.75rem 1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #6b7280;
-  text-align: left;
-  border-right: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #6b7280 !important;
+  text-align: left !important;
+  border-right: 1px solid #e5e7eb !important;
 }
 
 table.labeled thead th:last-child {
-  text-align: left;
+  text-align: left !important;
+  border-right: none !important;
 }
 
 /**
@@ -336,7 +333,7 @@ table tbody tr {
   width: 100% !important;
   background: #ffffff !important;
   border-bottom: 1px solid #e5e7eb !important;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease !important;
 }
 
 .inner table tbody tr:last-child,
@@ -353,38 +350,38 @@ table tbody tr:hover {
  * テーブルセル
  */
 table tbody td {
-  padding: 0.875rem 1rem;
-  vertical-align: middle;
-  border-right: 1px solid #e5e7eb;
+  padding: 0.875rem 1rem !important;
+  vertical-align: middle !important;
+  border-right: 1px solid #e5e7eb !important;
 }
 
 table tbody td:first-child {
-  font-weight: 500;
-  color: #374151;
+  font-weight: 500 !important;
+  color: #374151 !important;
 }
 
 table tbody td:last-child {
-  color: #6b7280;
-  text-align: left;
-  border-right: none;
+  color: #6b7280 !important;
+  text-align: left !important;
+  border-right: none !important;
 }
 
 table tbody td:only-child {
-  text-align: left;
-  font-weight: 500;
+  text-align: left !important;
+  font-weight: 500 !important;
 }
 
 /**
  * 注釈
  */
 .postscript {
-  padding-top: 1.5rem;
-  text-align: center;
-  color: #57606a;
+  padding-top: 1.5rem !important;
+  text-align: center !important;
+  color: #57606a !important;
 }
 
 .postscript a {
-  color: #0969da;
+  color: #0969da !important;
 }
 
 /**
@@ -392,20 +389,20 @@ table tbody td:only-child {
  */
 @media (max-width: 544px) {
   .banner {
-    height: 34px;
+    height: 34px !important;
   }
 
   .banner-symbol {
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
   }
 
   .banner-title {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .previous {
-    width: 32px;
-    height: 32px;
+    width: 32px !important;
+    height: 32px !important;
   }
 }
