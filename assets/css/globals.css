@@ -79,6 +79,34 @@ pre code {
 }
 
 /**
+ * 段落
+ */
+p {
+  margin: 0.75rem 0;
+  line-height: 1.7;
+}
+
+/**
+ * 強調（サブセクション見出し）
+ */
+strong {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #24292f;
+}
+
+strong::before {
+  content: '●';
+  color: #d97757;
+  margin-right: 0.5rem;
+  font-size: 0.6em;
+  vertical-align: middle;
+}
+
+/**
  * 見出しタグのリンク
  */
 h1,
