@@ -241,10 +241,11 @@ table.labeled thead th {
   letter-spacing: 0.05em;
   color: #6b7280;
   text-align: left;
+  border-right: 1px solid #e5e7eb;
 }
 
 table.labeled thead th:last-child {
-  text-align: right;
+  text-align: left;
 }
 
 /**
@@ -294,7 +295,7 @@ table tbody td:first-child {
 
 table tbody td:last-child {
   color: #6b7280;
-  text-align: right;
+  text-align: left;
   border-right: none;
 }
 
